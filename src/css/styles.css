@@ -334,7 +334,6 @@ body {
         display: inline-block;
         white-space: nowrap;
         text-align: right;
-        font-family: 'TT Lakes', serif;
     }
 
     .main__title-text::before {
