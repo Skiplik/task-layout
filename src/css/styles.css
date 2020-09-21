@@ -50,7 +50,6 @@ body {
 }
 
 .i-btn {
-    display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -169,7 +168,6 @@ body {
 }
 
 .title {
-    display: inline-block;
     position: relative;
     height: 40px;
     padding-left: 16px;
