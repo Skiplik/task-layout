@@ -155,10 +155,18 @@ body {
 }
 
 .main__title {
-    position: relative;
     padding-top: 24px;
 }
-.main__title::before {
+.main__title-text {
+    position: relative;
+    height: 40px;
+    margin: 0;
+    font-family: 'TT Lakes Bold', serif;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+}
+.main__title-text::before {
     content: '';
     position: absolute;
     top: 0;
@@ -168,14 +176,6 @@ body {
     background-color: #41F6D7;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-}
-.main__title-text {
-    height: 40px;
-    margin: 0;
-    font-family: 'TT Lakes Bold', serif;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -0.6px;
 }
 
 .main__navigation {
@@ -277,7 +277,7 @@ body {
         right: 24px;
     }
 
-    .main__title::before {
+    .main__title-text::before {
         left: -24px;
     }
 
@@ -335,6 +335,10 @@ body {
         white-space: nowrap;
         text-align: right;
         font-family: 'TT Lakes', serif;
+    }
+
+    .main__title-text::before {
+        left: -32px;
     }
 
     .main__navigation-list {
