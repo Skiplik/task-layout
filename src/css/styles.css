@@ -97,7 +97,7 @@ body {
 }
 
 .header__contacts {
-    margin: 0 auto;
+    margin: 0;
 }
 
 .contacts {
@@ -115,14 +115,12 @@ body {
     margin-right: 16px;
 }
 
-.header__order {
-    position: absolute;
-    margin: 0;
-    top: 24px;
-    right: 16px;
+.header__order-list {
+    position: relative;
+    margin: 0 0 0 auto;
 }
 
-.header__order::before {
+.header__order-list::before {
     content: '';
     position: absolute;
     top: 4px;
@@ -133,26 +131,26 @@ body {
     border-radius: 1px;
 }
 
-.order {
+.order-list {
     display: flex;
     padding: 0;
 }
 
-.order__item {
+.order-list__item {
     list-style-type: none;
 }
 
-.order__item:not(:last-child) {
+.order-list__item:not(:last-child) {
     margin-right: 16px;
 }
 
-.order__link {
+.order-list__link {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
-.order__link-title {
+.order-list__link-title {
     display: none;
     font-family: 'TT Lakes Medium', sans-serif;
     color: #1B1C21;
@@ -235,19 +233,19 @@ body {
     padding: 0 16px;
 }
 
-.article__desc-info {
+.article__desc-inner {
     max-height: 90px;
     overflow: hidden;
 }
 
-.article__desc-info-text {
+.article__text {
     margin-top: 0;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
 }
 
-.article__desc-btn {
+.article__btn {
     margin-top: 16px;
     padding-left: 8px;
 }
@@ -256,7 +254,7 @@ body {
     width: 100%;
 }
 
-.article__pic-img {
+.article__img {
     width: 100%;
     height: auto;
 }
@@ -269,6 +267,7 @@ body {
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1B1C21;
+    cursor: pointer;
 }
 .read-more-btn:before {
     content: '';
@@ -312,11 +311,11 @@ body {
     }
 
     .header__contacts {
-        margin-right: 162px;
+        margin-left: auto;
     }
 
-    .header__order {
-        right: 24px;
+    .header__order-list {
+        margin-left: 42px;
     }
 
     .title {
@@ -340,7 +339,7 @@ body {
         flex: 1 1 312px;
     }
 
-    .article__desc-info {
+    .article__desc-inner {
         max-height: 160px;
     }
 
@@ -356,21 +355,25 @@ body {
     }
 
     .header {
-        position: absolute;
-        right: 0;
-        visibility: hidden;
+        height: 0;
     }
 
-    .header__order {
-        visibility: visible;
+    .header > *:not(.header__order-list) {
+        display: none;
+    }
+
+    .header__order-list {
+        position: absolute;
+        z-index: 1;
+        top: 42px;
         right: 32px;
     }
 
-    .header__order::before {
+    .header__order-list::before {
         content: none;
     }
 
-    .order__link-title {
+    .order-list__link-title {
         margin-right: 8px;
         display: inline-block;
         white-space: nowrap;
@@ -379,6 +382,10 @@ body {
 
     .title {
         padding-left: 32px;
+    }
+
+    .main {
+        padding-top: 42px;
     }
 
     .main__nav {
