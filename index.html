@@ -12,20 +12,20 @@
     <body>
         <header class="header">
             <button class="i-btn i-btn--burger header__burger-btn"></button>
-            <div class="header__logo">
-                <a class="header__logo-link" href="#">
-                    <img class="header__logo-img" src="src/img/logo.png" alt="CPS">
+            <div class="logo header__logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="src/img/logo.png" alt="CPS">
                 </a>
             </div>
-            <ul class="contacts header__contacts">
-                <li class="contact__item">
-                    <button class="i-btn i-btn--call contact__btn"></button>
+            <ul class="contacts-list header__contacts-list">
+                <li class="contacts-list__item">
+                    <button class="i-btn i-btn--call contacts-list__btn"></button>
                 </li>
-                <li class="contact__item">
-                    <button class="i-btn i-btn--message contact__btn"></button>
+                <li class="contacts-list__item">
+                    <button class="i-btn i-btn--message contacts-list__btn"></button>
                 </li>
-                <li class="contact__item">
-                    <a href="" class="i-btn i-btn--profile contact__btn"></a>
+                <li class="contacts-list__item">
+                    <a href="" class="i-btn i-btn--profile contacts-list__btn"></a>
                 </li>
             </ul>
             <ul class="order-list header__order-list">
@@ -80,10 +80,15 @@
                             Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                         </p>
                     </div>
-                    <button class="read-more-btn article__btn">Читать далее</button>
+                    <button class="read-more-btn article__read-more-btn">Читать далее</button>
                 </div>
-                <picture class="article__pic">
+                <!--<div class="article__pic">
                     <img class="article__img" src="src/img/logo-photo.jpg" alt="CPS">
+                </div>-->
+                <picture class="article__pic">
+                    <source srcset="src/img/logo-photo-desktop.png 531w" media="(min-width: 1120px)" sizes="47vw">
+                    <source srcset="src/img/logo-photo-table.png 360w" media="(min-width: 768px)" sizes="47vw">
+                    <img class="article__img" srcset="src/img/logo-photo-mobile.png 320w" alt="CPS" sizes="100vw">
                 </picture>
             </article>
         </main>
