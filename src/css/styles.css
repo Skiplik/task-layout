@@ -45,8 +45,9 @@ html {
 }
 
 body {
-    min-width: 320px;
     position: relative;
+    min-width: 320px;
+    background-color: #F8F8F8;
 }
 
 .i-btn {
@@ -95,6 +96,7 @@ body {
     align-items: center;
     height: 88px;
     padding: 0 16px;
+    background-color: #FFFFFF;
 }
 
 .header__burger-btn {
@@ -162,7 +164,6 @@ body {
 }
 
 .main {
-    background-color: #F8F8F8;
     padding-top: 24px;
 }
 
@@ -255,9 +256,9 @@ body {
     padding-left: 8px;
 }
 
-/*.article__pic {
-    width: 100%;
-}*/
+.article__img {
+    min-width: 320px;
+}
 
 .read-more-btn {
     border: none;
@@ -336,7 +337,6 @@ body {
 
     .article__desc {
         padding: 0 24px;
-        flex: 1 1 312px;
     }
 
     .article__desc-inner {
@@ -344,7 +344,6 @@ body {
     }
 
     .article__pic {
-        /*flex: 1 1 360px;*/
         padding: 0 24px;
     }
 }
@@ -404,11 +403,9 @@ body {
 
     .article__desc {
         padding: 0 32px;
-        flex: 1 1 490px;
     }
 
     .article__pic {
-        /*flex: 1 1 531px;*/
         padding: 0 32px;
     }
 }
