@@ -1,0 +1,122 @@
+.menu-inner {
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #F2F2F2;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    width: 320px;
+    min-height: 100%;
+    background: #FFFFFF;
+    box-shadow:
+            -2px 0px 4px rgba(69, 79, 126, 0.02),
+            16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+.aside__header {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 24px;
+}
+
+.aside__close-btn {
+    margin-right: 16px;
+}
+
+.aside__search-btn {
+    margin-left: auto;
+}
+
+.aside__nav-item {
+    margin-bottom: 24px;
+}
+
+.menu-inner__aside-nav {
+    margin-top: 20px;
+}
+
+.aside__nav-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 32px;
+    padding-left: 24px;
+    text-decoration: none;
+    color: #1B1C21;
+    font-family: "TT Lakes Medium", sans-serif;
+    transition: color .2s ease-out;
+}
+
+.aside__nav-link:hover,
+.aside__nav-link---active {
+    color: #7E7E82;
+}
+
+.aside__nav-link---active:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #41F6D7;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.aside__footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding: 0 24px 32px 24px;
+}
+
+.aside__email {
+    margin-top: 16px;
+    text-decoration: none;
+    color: #1B1C21;
+    font-family: 'TT Lakes Medium', sans-serif;
+}
+
+.aside__phone {
+    margin-top: 12px;
+    text-decoration: none;
+    color: #1B1C21;
+    font-family: 'TT Lakes Bold', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+}
+
+.lang-list {
+    display: flex;
+    margin-top: 40px;
+    padding: 0;
+    font-family: 'TT Lakes Medium', sans-serif;
+}
+
+.lang-list__item {
+    list-style-type: none;
+}
+
+.lang-list__item:not(:last-child) {
+    margin-right: 7px;
+}
+
+.lang-list__link {
+    text-decoration: none;
+    color: #1B1C21;
+    transition: color .2s ease-out;
+}
+
+.lang-list__link:hover,
+.lang-list__link--active {
+    color: #7E7E82;
+}
