@@ -54,7 +54,7 @@ ul {
     padding: 0;
 }
 
-.body {
+body {
     position: relative;
     min-width: 320px;
     background-color: #F8F8F8;
@@ -123,8 +123,8 @@ ul {
     background-color: #FFFFFF;
 }
 
-.header__burger-btn {
-    margin-right: 16px;
+.header__logo {
+    margin-left: 16px;
 }
 
 .header__contacts-list {
@@ -321,7 +321,6 @@ ul {
 
     .header__burger-btn {
         position: relative;
-        margin-right: 42px;
     }
 
     .header__burger-btn:after {
@@ -333,6 +332,10 @@ ul {
         height: 32px;
         background: #EAEAEA;
         border-radius: 1px;
+    }
+
+    .header__logo {
+        margin-left: 42px;
     }
 
     .header__contacts-list {
