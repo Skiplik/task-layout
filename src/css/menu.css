@@ -95,9 +95,12 @@
     letter-spacing: -0.6px;
 }
 
+.menu__lang-list {
+    margin-top: 40px;
+}
+
 .lang-list {
     display: flex;
-    margin-top: 40px;
     padding: 0;
     font-family: 'TT Lakes Medium', sans-serif;
 }
