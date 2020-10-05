@@ -1,5 +1,5 @@
-const brandsList = document.querySelector('.services__brands'),
-    readMoreBtn = document.querySelector('.services__read-more-btn');
+const brandsList = document.querySelector('.section__content'),
+    readMoreBtn = document.querySelector('.section__read-more-btn');
 
 let swiper = null;
 
@@ -8,7 +8,7 @@ function showMore(event) {
         brandsList.classList.remove('brands--short');
 
         event.target.innerText = 'Скрыть';
-        event.target.classList.add('services__read-more-btn--hide');
+        event.target.classList.add('read-more-btn--less');
 
         return;
     }
@@ -16,7 +16,7 @@ function showMore(event) {
     brandsList.classList.add('brands--short');
 
     event.target.innerText = 'Показать все';
-    event.target.classList.remove('services__read-more-btn--hide');
+    event.target.classList.remove('read-more-btn--less');
 }
 
 function initSlider() {
