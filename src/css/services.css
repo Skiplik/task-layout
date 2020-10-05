@@ -2,37 +2,37 @@
     width: 100%;
 }
 
-.services__brand-list {
+.services__brands {
     margin-top: 16px;
 }
 
-.brand-list {
+.brands__list {
     display: flex;
-    row-gap: 16px;
-    column-gap: 16px;
     padding-left: 16px;
     padding-right: 16px;
 }
 
-.brand-list--short {
+.brands--short {
     max-height: 160px;
     overflow: hidden;
 }
 
-.brand-list__item {
+.brands__item {
     list-style-type: none;
+    width: 240px;
+    height: 72px;
 }
 
-.brand-list__btn-to-brand {
+.brands__btn-to-brand {
     margin-left: auto;
 }
 
-.brand-list__link {
+.brands__link {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     width: 240px;
     height: 72px;
-    max-height: 72px;
     padding: 16px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -49,23 +49,27 @@
         box-shadow: 0 0 15px 0 rgb(255, 62, 121);
     }
 }
-.brand-list__link:hover .i-btn--to-brand {
+.brands__link:hover .i-btn--to-brand {
     animation: pulse .7s linear infinite alternate;
 }
 /* эксперименты с анимацией */
 
 @media (max-width: 767px) {
+    .brands {
+        height: 114px;
+    }
+
     .services__read-more-btn {
         display: none;
     }
 }
 
 @media (min-width: 768px) {
-    .services__brand-list {
+    .services__brands {
         margin-top: 24px;
     }
 
-    .brand-list {
+    .brands__list {
         max-width: 100%;
         flex-wrap: wrap;
         padding-left: 24px;
@@ -73,7 +77,8 @@
         column-gap: 24px;
     }
 
-    .brand-list__link {
+    .brands__item,
+    .brands__link {
         width: 224px;
     }
 
@@ -83,13 +88,14 @@
 }
 
 @media (min-width: 1120px) {
-    .brand-list {
+    .brands__list {
         padding-left: 32px;
         padding-right: 32px;
         column-gap: 32px;
     }
 
-    .brand-list__link {
+    .brands__item,
+    .brands__link {
         width: 240px;
     }
 
